@@ -1,0 +1,145 @@
+/*헤더 css*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+header {
+    padding-top: 10px; /*함해봄*/
+    background: #02286f;
+}
+
+    header::after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+
+#header {
+    position: relative;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+#first {
+    height: 60px;
+    width: 100%;
+}
+
+/*로그인 회원가입*/
+.log-section {
+    float: right;
+}
+
+    .log-section ul li {
+        display: inline-block;
+    }
+
+        .log-section ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            line-height: 60px;
+        }
+
+            .log-section ul li a:hover {
+                color: yellow;
+            }
+
+/*검색창*/
+
+
+.search-box {
+    /*transform: translate(-50%, -50%);*/
+    position: absolute;
+    left: 50%;
+    width: auto;
+    background: #02286f;
+    border-radius: 40px;
+    padding: 10px;
+    display: inline;
+}
+
+/* 검색아이콘 누르면 늘어나게 하는 그 효과..
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: black;
+}*/
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+
+/*카테고리*/
+#category {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+}
+
+.cate ul {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+
+    .cate ul li {
+        display: inline-block;
+        float: left;
+        justify-content: center;
+    }
+
+        .cate ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+            .cate ul li a:link {
+                display: block;
+                text-align: center;
+                width: 120px;
+                padding: 15px;
+                text-transform: uppercase;
+            }
+
+            .cate ul li a:hover {
+                color: yellow;
+            }
